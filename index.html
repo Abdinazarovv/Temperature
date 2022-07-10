@@ -5,9 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="h-100 bg-secondary">
+    <div class="container-fluid text-center mx-auto">
+      <h2 class="site__heading p-5">Temperature converter</h2>
+
+      <form
+        class="temp__form mx-auto w-75"
+        action="https://echo.htmlacademy.ru"
+        method="GET"
+      >
+        <div class="form-group d-md-flex m-0 mr-md-3">
+          <label
+            class="alert alert-primary text-nowrap h4 w-50"
+            for="#temp_input"
+            >Temperature in celsius</label
+          >
+          <input
+            class="temp__input form-control h-auto mr-mb-15 w-50"
+            type="text"
+            step="any"
+            id="temp_input"
+            name="tempereture-C"
+            placeholder="°C"
+            required
+          />
+        </div>
+
+        <div class="form-group d-md-flex m-0 mr-md-3">
+          <label
+            class="alert alert-primary text-nowrap h4 w-50"
+            for="#temp_output"
+            >Temperature in fahrenheit</label
+          >
+          <input
+            class="temp__output form-control h-auto w-50"
+            type="text"
+            id="temp_input"
+            name="tempereture-F"
+            placeholder="32 °F"
+            disabled
+          />
+        </div>
+
+        <button
+          class="form-submit btn btn-primary h1 form-control"
+          type="submit"
+        >
+          &#10226; Convert
+        </button>
+        <button class="form-submit btn btn-primary h1 form-control" type="reset" value="Reset">Reset</button>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
     <script src="./main.js"></script>
   </body>
 </html>

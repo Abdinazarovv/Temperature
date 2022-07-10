@@ -1,0 +1,19 @@
+.site__heading {
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
+
+.form-submit {
+    font-size: 35px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+.reset-btn {
+    display: inline-block;
+    padding: 10px 20px;
+}
